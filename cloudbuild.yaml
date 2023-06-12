@@ -55,7 +55,6 @@ substitutions:
     _PIPELINE_NAME: 'tfx_covertype_continuous_training'
     _MODEL_NAME: 'tfx_covertype_classifier'
     _DATA_ROOT_URI: 'gs://cloud-training/OCBL203/workshop-datasets'
-    TAG_NAME: 'test'
     _TFX_IMAGE_NAME: 'lab-03-tfx-image'
     _PIPELINE_FOLDER: 'pipeline'
     _PIPELINE_DSL: 'runner.py'
