@@ -46,3 +46,20 @@ steps:
 
 # Push the custom image to Container Registry 
 images: ['gcr.io/$PROJECT_ID/$_TFX_IMAGE_NAME:$TAG_NAME']
+
+substitutions:
+    _GCP_REGION: 'us-central1-a'
+    _ARTIFACT_STORE_URI: 'gs://qwiklabs-gcp-02-803333b0c3dd-kubeflowpipelines-default/'
+    _CUSTOM_SERVICE_ACCOUNT: 'tfx-tuner-caip-service-account@qwiklabs-gcp-02-803333b0c3dd.iam.gserviceaccount.com'
+    _ENDPOINT: 'https://52e7d2a34b6d586d-dot-us-central1.pipelines.googleusercontent.com'
+    _PIPELINE_NAME: 'tfx_covertype_continuous_training'
+    _MODEL_NAME: 'tfx_covertype_classifier'
+    _DATA_ROOT_URI: 'gs://cloud-training/OCBL203/workshop-datasets'
+    TAG_NAME: 'test'
+    TFX_IMAGE_NAME: 'lab-03-tfx-image'
+    PIPELINE_FOLDER: 'pipeline'
+    PIPELINE_DSL: 'runner.py'
+    RUNTIME_VERSION: '2.3'
+    PYTHON_VERSION: '3.7'
+    USE_KFP_SA: 'False'
+    ENABLE_TUNING: 'True'
